@@ -4,13 +4,15 @@
     margin:0;
     padding:0;
     text-align: center;
-    text-decoration: none;
+    list-style-type: none;
+    
 }
+
 .bg-Pic{
     width: 100%;
-    height: 30rem;
+    height: 35rem;
     background-image: url("images/background.jpg");
-    margin:4rem auto 0;
+    margin:3rem auto 0;
     background-position: center;
     text-align: center;
     text-shadow:3px 3px 2px black;
@@ -21,16 +23,19 @@ h1{
     font-size: 5rem;
     padding:2rem;
 }
-nav{
-    display:flex;
-    background-color:rgb(75, 71, 71);
+nav {
     position: fixed;
-    top:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
     justify-content: flex-end;
-    width:100%;
+    background: rgb(75, 71, 71);
 }
+
 nav a{
-    padding:1.5rem 3rem;
+    padding:1rem 2rem;
     text-decoration: none;
     color:rgb(209, 192, 192)
 }
@@ -41,44 +46,70 @@ nav a:hover{
 #aboutMe{
     display:flex;
     background-color:rgb(236, 203, 176);
-    padding: 2rem 3rem;
+    padding: 5rem 3rem;
 }
 #image{ 
     display:flex;
     justify-content: flex-start;
     height: 10rem;
+    padding:0 2rem;
 }
-#bio{
+#about{
     display:flex;
     flex-direction: column;
-    justify-content:center;
+    align-items: center;
+    width:1000px;
 
 }
-#skills{
-    padding: 2rem 3rem;
+#about p{
+    padding:2rem;
+}
+
+
+
+.skills{
+
     background-image: url("images/background.jpg");
     background-position-y: -10vh;
     background-position-x: 10vw;
-    height:20rem;
+    height:25rem;
     width:100%;
     color:lightcyan;
     text-shadow:3px 3px 2px black;
 }
-#skills h3{
+#bg{
+    background-color:grey;
+    margin:0;
+    opacity: .6;
+    width:100%;
+    height:25rem;
+
+}
+.skills h3{
     display:flex;
     justify-content:flex-start;
     font-size: 3rem;
     padding:2rem 2rem;
 }
-#skills ul{
+.skills ul{
     display:flex;
     justify-content: space-around;
+    align-items: center;
     padding:1rem 5rem;
     font-size: 2rem;
+    flex-wrap: wrap;
 }
+li img{
+    width:6rem;
+}
+
+
+
+
 #projects{
     font-size: 2rem;
-    padding:2rem 2rem;
+    padding:3rem 2rem;
+    background-color: rgb(236, 203, 176);
 }
 .cards{
     font-size: 1rem;
@@ -98,8 +129,39 @@ nav a:hover{
     width: 270px;
     height: 550px;
     margin: 15px;
-    background-color: white;
+    background-color: white;    
+}
+#card img{
+    width:95%;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 
 
+
+
+
+
+
+#contactMe{
+    background-color:rgb(236, 203, 176);
+    padding: 1rem;
+}
+#contactMe h3{
+    display:flex;
+    justify-content:center;
+    font-size: 2rem;
+    padding:2rem 2rem;
+}
+#contactMe ul{
+    display:flex;
+    justify-content: space-around;
+    padding:1rem 5rem;
+    flex-wrap: wrap; 
+    font-size: 1.25rem;
+}
+footer{
+    background-color:rgb(75, 71, 71);
+    padding:1.5rem;
+    color:rgb(209, 192, 192)
+}
