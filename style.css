@@ -49,25 +49,23 @@ nav a:hover{
     color:#130d06;
 }
 #aboutMe{
-    display:flex;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
     background-color: #f9f2ec;
-    padding: 4rem 2rem;
+    padding: 4rem 0;
 }
-#image{ 
-    display:flex;
-    justify-content: flex-start;
+#image{    
     width: 20vw;
     height: 20vw;
+    min-width: 20px;
     align-self: center;
-    padding:0 1rem 0 0;
+    padding-left: 1.5rem;
 }
 #about{
-    display:flex;
-    flex-direction: column;
     align-items: center;
 }
 #about h2{
-    padding:0 0 2rem 0;
+    padding-bottom:1.5rem;
     text-shadow: -1px 1px 5px #130d06;
 }
 #about p{
@@ -118,7 +116,6 @@ li img{
 #card{
     float: left;
     box-shadow: 0 4px 8px 0 #130d06;
-    transition: 0.3s;
     border-radius: 5px;
     width: 270px;
     height: 500px;
@@ -130,13 +127,15 @@ li img{
     width:95%;
     box-shadow: -1px 1px 3px #130d06;
 }
+#card h3{
+    padding:.5rem;
+}
 #card p{
     font-weight: bold;
 }
 #card p, li{
     display:flex;
     padding:5px;
-    justify-content: flex-start;
 }
 #contactMe{
     background-color: #f9f2ec;
