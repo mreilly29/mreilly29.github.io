@@ -7,7 +7,6 @@
     list-style-type: none;
     
 }
-
 .bg-Pic{
     width: 100%;
     height: 35rem;
@@ -91,11 +90,6 @@ li img{
     height:6rem; 
     border-radius: 20px;
 }
-
-
-
-
-
 #projects{
     font-size: 2rem;
     padding:3rem 2rem;
@@ -137,8 +131,6 @@ li img{
     padding:5px;
     justify-content: flex-start;
 }
-
-
 #contactMe{
     background-color: #eaeae1;
     padding: 1rem;
