@@ -4,34 +4,39 @@
     margin:0;
     padding:0;
     text-align: center;
+    list-style-type: none;
+    
 }
+
 .bg-Pic{
     width: 100%;
-    height: 30rem;
+    height: 35rem;
     background-image: url("images/background.jpg");
-    margin:4rem auto 0;
+    margin:3rem auto 0;
     background-position: center;
     text-align: center;
-    text-shadow:3px 3px 2px black;
-    color:lightcyan;
+    text-shadow:-3px 2px 2px black;
+    color: #eaeae1;
     font-size: 2rem;
 }
 h1{   
     font-size: 5rem;
     padding:2rem;
 }
-nav{
-    display:flex;
-    background-color:rgb(75, 71, 71);
+nav {
     position: fixed;
-    top:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
     justify-content: flex-end;
-    width:100%;
+    background: rgb(75, 71, 71);
 }
 nav a{
-    padding:1.5rem 2rem;
+    padding:1rem 2rem;
     text-decoration: none;
-    color:rgb(209, 192, 192)
+    color: #eaeae1;
 }
 nav a:hover{
     background-color: grey;
@@ -39,45 +44,65 @@ nav a:hover{
 }
 #aboutMe{
     display:flex;
-    background-color:rgb(236, 203, 176);
-    padding: 2rem 3rem;
+    background-color: #eaeae1;
+    padding: 4rem 3rem;
 }
 #image{ 
     display:flex;
     justify-content: flex-start;
     height: 10rem;
+    padding:0 2rem;
 }
-#bio{
+#about{
     display:flex;
     flex-direction: column;
-    justify-content:center;
+    align-items: center;
 
 }
-#skills{
-    padding: 2rem 3rem;
+#about h2{
+    padding:0 0 2rem 0;
+    text-shadow: -1px 1px 5px rgb(75, 71, 71);
+    
+}
+#about p{
+    padding:2rem;
+    background-color:#bdbdb0;
+    border-radius: 10px;
+}
+.skills{
     background-image: url("images/background.jpg");
     background-position-y: -10vh;
     background-position-x: 10vw;
     height:20rem;
     width:100%;
-    color:lightcyan;
+    color: #eaeae1;
     text-shadow:3px 3px 2px black;
-}
-#skills h3{
-    display:flex;
-    justify-content:flex-start;
     font-size: 3rem;
     padding:2rem 2rem;
 }
-#skills ul{
+.skills ul{
     display:flex;
     justify-content: space-around;
+    align-items: center;
     padding:1rem 5rem;
-    font-size: 2rem;
+    flex-wrap: wrap;
 }
+li img{
+    height:6rem; 
+    border-radius: 20px;
+}
+
+
+
+
+
 #projects{
     font-size: 2rem;
-    padding:2rem 2rem;
+    padding:3rem 2rem;
+    background-color: #eaeae1;
+}
+#projects h2{
+    text-shadow: -1px 1px 5px rgb(75, 71, 71); 
 }
 .cards{
     font-size: 1rem;
@@ -97,25 +122,46 @@ nav a:hover{
     width: 270px;
     height: 550px;
     margin: 15px;
-    background-color: white;
+    background-color:#bdbdb0;  
+    box-shadow: -2px 2px 5px rgb(75, 71, 71);  
 }
-li{
-    list-style-type: none;
+#card img{
+    width:95%;
+    box-shadow: -1px 1px 3px rgb(75, 71, 71);
+}
+#card p{
+    font-weight: bold;
+}
+#card p, li{
+    display:flex;
+    padding:5px;
+    justify-content: flex-start;
+}
+
+#contactMe{
+    background-color: #eaeae1;
+    padding: 1rem;
+
 }
 #contactMe h3{
     display:flex;
     justify-content:center;
     font-size: 2rem;
     padding:2rem 2rem;
+
+    text-shadow: -1px 1px 5px rgb(75, 71, 71);  
+
+
 }
 #contactMe ul{
     display:flex;
     justify-content: space-around;
     padding:1rem 5rem;
+    flex-wrap: wrap; 
     font-size: 1.25rem;
 }
 footer{
     background-color:rgb(75, 71, 71);
     padding:1.5rem;
-    color:rgb(209, 192, 192)
+    color: #eaeae1;
 }
