@@ -4,7 +4,30 @@
   
     function setUpPage() {
         TechInventoryCarousel();
+        NavMenuToggle();
     }
+
+ // Navigation menu can be toggled
+ function NavMenuToggle() {
+
+    const nav = document.querySelector('nav');
+
+    const navClickHandler = function() {
+      this.classList.toggle('open');
+      event.stopPropagation();
+    };
+
+    nav.addEventListener('click', navClickHandler);
+
+    const bodyClickHandler = function() {
+      nav.classList.remove('open');
+    };
+
+    document.body.addEventListener('click', bodyClickHandler);
+  }
+
+
+
   // Image Carousel / Slider
   function TechInventoryCarousel() {
 
