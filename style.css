@@ -5,10 +5,11 @@
     padding:0;
     text-align: center;
     list-style-type: none;
+    line-height: 1.618em;
 }
 .bg-Pic{
     width: 100%;
-    height: 35rem;
+    height: 37rem;
     background-image: url("images/bg-pic.png");
     margin:3rem auto 0;
     background-position: center;
@@ -17,6 +18,7 @@
     color: #FBF6F2;
     font-size: 2rem;
 }
+
 h1{   
     font-size: 5rem;
     padding:2rem;
@@ -73,28 +75,7 @@ nav a:hover{
     background-color:#e6ccb3;
     border-radius: 10px;
 }
-.skills{
-    background-image: url("images/wood.png");
-    background-position-y: -10vh;
-    background-position-x: 10vw;
-    height:-30vw;
-    width:100%;
-    color: #f9f2ec;
-    text-shadow:3px 3px 2px #130d06;
-    font-size: 3rem;
-    padding:2rem 2rem;
-}
-.skills ul{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    padding:1rem 5rem;
-    flex-wrap: wrap;
-}
-li img{
-    height:6rem; 
-    border-radius: 20px;
-}
+
 #projects{
     font-size: 2rem;
     padding:3rem 2rem;
@@ -118,7 +99,7 @@ li img{
     box-shadow: 0 4px 8px 0 #130d06;
     border-radius: 5px;
     width: 270px;
-    height: 500px;
+    height: 520px;
     margin: 15px;
     background-color:#e6ccb3;  
     box-shadow: -2px 2px 5px #130d06;  
@@ -128,14 +109,15 @@ li img{
     box-shadow: -1px 1px 3px #130d06;
 }
 #card h3{
-    padding:.5rem;
+    padding:5px;
 }
 #card p{
     font-weight: bold;
 }
 #card p, li{
     display:flex;
-    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
 }
 #contactMe{
     background-color: #f9f2ec;
@@ -156,8 +138,102 @@ li img{
     flex-wrap: wrap; 
     font-size: 1.25rem;
 }
+#contactMe a{
+    text-decoration: none;
+    color:#130d06;
+}
 footer{
     background-color:#130d06;
     padding:1.5rem;
     color: #f9f2ec;
 }
+#contactMe a:hover{
+    color:purple;
+}
+.skills{
+    background-image: url("images/wood.png");
+    height:-30vw;
+    width:100%;
+    color: #130d06;
+    text-shadow:2px 2px 2px #f9f2ec;
+    font-size: 3rem;
+    padding:2rem 2rem;
+}
+#slider ::selection {
+    color: inherit;
+    background: transparent;
+  }
+  
+  #slider-frame {
+    border: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #333;
+    position: relative;
+  }
+  
+  #slider-prev,
+  #slider-next {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 2px #000;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 30px;
+  }
+  
+  #slider-prev:hover,
+  #slider-next:hover {
+    background: #f9f2ecbf;
+    color:#130d06;
+  }
+  
+  #slider-prev {
+    left: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #slider-next {
+    right: 0;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  #slider-frame {
+    background: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 50vw;
+    min-width:300px;
+    background-size: contain;
+    margin:auto;
+    height: 5em;
+  }
+  
+  #slider-frame [data-src] {
+    display: none;
+  }
+  
+  #slider-caption {
+    margin: auto;
+    margin-top: 5px;
+ 
+    padding: 0.2em 0.5em;
+    font-size: 0.8em;
+    text-align: center;
+    width: 50vw;
+    min-width:300px;
+    transition: 0.5s;
+  }
+  
+  #slider-caption.flash {
+    transition: 0s;
+    background: #ccc;
+  }
