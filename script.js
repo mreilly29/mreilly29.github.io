@@ -3,10 +3,12 @@
     setUpPage();
   
     function setUpPage() {
-        TechInventoryCarousel();
+        
         NavMenuToggle();
         resetOpenCloseWindows();
-        modalOpenOnClick();
+        OpenModal();
+        TechInventoryCarousel();
+
     }
 
  // Navigation menu can be toggled
@@ -29,16 +31,17 @@
   }
 
 // Modal can be opened
-function modalOpenOnClick() {
+function OpenModal() {
 
-    const modalTriggerElement = document.querySelector('#modal-trigger');
+    const modalTriggerElement = document.getElementById('#modal-trigger');
 
     const modalTriggerClickHandler = function() {
       document.body.classList.add('modal-open');
+      console.log("clicked");
     };
 
     modalTriggerElement.addEventListener('click', modalTriggerClickHandler);
-
+    
     // Modal can be closed
     const modalCloseButton = document.querySelector('#modal button');
 

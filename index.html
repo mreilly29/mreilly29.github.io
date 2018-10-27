@@ -12,7 +12,7 @@
 <header >
     <div class="bg-Pic" >
     <h1>Maggie Reilly</h1>
-    <span>Software Developer</span>
+    <span id="occupation">Software Developer</span>
     </div>
 </header>
 <main>
@@ -23,7 +23,7 @@
             <p>Detail-oriented programmer with a varied IT background including business
             analysis and digital marketing, eager to bring emerging software 
             development skills and diverse experience to an agile, client-focused 
-            team. Learn more about my<span id="#modal-trigger" class="live">background</span>.</p>
+            team. Learn more about my <span id="#modal-trigger" class="live">background</span>.</p>
         </div>
     </section>
 
@@ -52,15 +52,17 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="cards">
+        <div class="cards" id="projectCards">
             <article id="card">
             <h3>Virtual Pet Shelter</h3>                
                 <a href="https://github.com/mreilly29/VirtualPetShelter"><img src="images/vpShelter.PNG"></a>
                 <p>Create an application that simulates employees taking care of the 
                     pets in a shelter.</p>
-                    _____________________________
-                <p>Skills/Technology</p>
-                    <ul>
+                <p> _____________________________</p>
+                    
+                <p class="expandSkills">Skills/Technology</p>
+                <button>Show Details</button>
+                <ul>
                             <li>Basic C# principles</li>
                             <li>Loops/Lists/Methods</li>
                             <li>Principles of OOP</li>
@@ -73,8 +75,10 @@
             <a href="https://github.com/mreilly29/Reviews-Site"><img src="images/corgi.PNG"></a>
             <p>Create a ASP.NET MVC Core app that displays a list of reviews, allowing us 
                 to click on an individual review to see its details.</p>
-                _____________________________
-            <p>Skills/Technology</p>
+            <p> _____________________________</p>
+                
+            <p class="expandSkills">Skills/Technology</p>
+            <button>Show Details</button>
             <ul>
                 <li>Basic C# principles</li>
                 <li>ASP.NET</li>
@@ -89,8 +93,10 @@
             <a href="https://github.com/mreilly29/BankAccount"><img src="images/bank.PNG"></a>
             <p>Used Test Driven Development to build an application that simulates a user 
                 interacting with a Bank Account. </p>
-                _____________________________
-            <p>Skills/Technology</p>
+            <p> _____________________________</p>
+            <p class="expandSkills">Skills/Technology</p>
+            <button>Show Details</button>
+
                 <ul>
                         <li>Basic C# principles</li>
                         <li>Principles of OOP</li>
@@ -116,6 +122,7 @@
 <nav>
     <a href="#">Home</a>
     <a href="#aboutMe">About Me</a>
+    <a href="#techInventory">My Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contactMe">Contact Me</a>
 </nav>
@@ -129,20 +136,27 @@
           <h4>My background</h4>
     
           <div id="modal-content">
-                <p>
-                2018 John Carroll University graduate with a BA in Sport Administration
-                with a minor in Business.
-                </p>
-                <p>
-                2018 We Can Code IT graduate with a certificate
+            <p>
+                <i class="fas fa-briefcase"></i> Two consecutive summer internships as a IT Business Analyst 
+                Intern at Dealer Tire in Cleveland, OH. <span>(Summers 2016 - 2017)</span>
+            </p>
+            <p>
+                <i class="fas fa-briefcase"></i> Intern for John Carroll University's Athletic Department 
+                managing and promoting the JCU student rewards Blue Streak Nation app. <span>(Fall '17 - Spring '18)</span>
+            </p>
+            <p>
+                <i class="fas fa-dog"></i> 2.5 years working at Camp Bow Wow (dog daycare/boarding facility) 
+                as a 'Camp Counselor' <span>(Dec. 2015 - Aug. 2018)</span>
+            </p>            
+            <p>
+                <i class="fas fa-graduation-cap"></i> 2018 We Can Code IT graduate with a certificate
                 of Software Development.
-                </p>
-                <p>
-                Two summer internships at Dealer Tire (Cleveland, OH) as a Business Analyst in the IT Deptartment.
-                </p>
-                <p>
-                Internship with John Carroll University's Athletic Department managing an student rewards application.
-                </p>
+            </p>
+            <p>                
+                <i class="fas fa-graduation-cap"></i> 2018 John Carroll University graduate with a BA in 
+                Sport Administration with a minor in Business. 
+            </p>
+            
           </div>
         </div>
       </div>    

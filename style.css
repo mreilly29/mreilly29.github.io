@@ -6,8 +6,12 @@
     text-align: center;
     list-style-type: none;
     line-height: 1.618em;
+    background-color:f9f2ec;
 }
-
+body.modal-open {
+    /* hide scrolling when modal open */
+    overflow: hidden;
+  }
 .bg-Pic{
     width: 100%;
     height: 37rem;
@@ -24,7 +28,7 @@ h1{
     font-size: 5rem;
     padding:2rem;
 }
-span{
+#occupation{
     display:flex;
     justify-content: center;
     padding:1rem;
@@ -51,7 +55,7 @@ nav a:hover{
     background-color: RGB(230,204,179,.6);
     color:#130d06;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
 
     nav {
       display: flex;
@@ -64,8 +68,8 @@ nav a:hover{
     }
     nav::before {
       content: 'MENU';
-      color: #fff;
-      background: #000;
+      color: #f9f2ec;
+      background: #130d06;
       font-weight: bold;
       padding: 1em 2em;
     }
@@ -106,7 +110,13 @@ nav a:hover{
     background-color:#e6ccb3;
     border-radius: 10px;
 }
-
+span.live {
+    cursor: pointer;
+    border-bottom: 1px dashed #09f;
+  }
+  span.live:hover {
+    color: #09f;
+  }
 #projects{
     font-size: 2rem;
     padding:3rem 2rem;
@@ -150,6 +160,12 @@ nav a:hover{
     padding-left:10px;
     padding-right:10px;
 }
+#card button{
+    display:none;
+}
+
+  
+
 #contactMe{
     background-color: #f9f2ec;
     padding: 1rem;
@@ -188,7 +204,7 @@ footer{
     color: #130d06;
     text-shadow:2px 2px 2px #f9f2ec;
     font-size: 3rem;
-    padding:2rem 2rem;
+    padding:3rem 2rem;
 }
 #slider ::selection {
     color: inherit;
@@ -268,17 +284,8 @@ footer{
     transition: 0s;
     background: #ccc;
   }
-  body.modal-open {
-    /* hide scrolling when modal open */
-    overflow: hidden;
-  }
-  span.live {
-    cursor: pointer;
-    border-bottom: 1px dashed #09f;
-  }
-  span.live:hover {
-    color: #09f;
-  }
+  
+  
   #backdrop {
     position: fixed;
     top: 0;
@@ -326,7 +333,14 @@ footer{
   }
   
   #modal #modal-content {
+
     clear: both;
     padding-top: 1em;
   }
   
+ #modal-content p{
+      text-align: left;
+  }
+  #modal-content span{
+    font-size: 12px;
+}
