@@ -5,6 +5,8 @@
     function setUpPage() {
         TechInventoryCarousel();
         NavMenuToggle();
+        resetOpenCloseWindows();
+        modalOpenOnClick();
     }
 
  // Navigation menu can be toggled
@@ -26,7 +28,26 @@
     document.body.addEventListener('click', bodyClickHandler);
   }
 
+// Modal can be opened
+function modalOpenOnClick() {
 
+    const modalTriggerElement = document.querySelector('#modal-trigger');
+
+    const modalTriggerClickHandler = function() {
+      document.body.classList.add('modal-open');
+    };
+
+    modalTriggerElement.addEventListener('click', modalTriggerClickHandler);
+
+    // Modal can be closed
+    const modalCloseButton = document.querySelector('#modal button');
+
+    const modalCloseButtonClickHandler = function() {
+      document.body.classList.remove('modal-open');
+    };
+
+    modalCloseButton.addEventListener('click', modalCloseButtonClickHandler);
+  }
 
   // Image Carousel / Slider
   function TechInventoryCarousel() {
@@ -82,7 +103,24 @@
       displayNextSliderImage();
     }, 4000);
   }
+  // Resizing the window resets open/closed product details
+  // Resizing the window resets nav visibility
+  function resetOpenCloseWindows() {
 
+    const windowResizeHandler = function() {
+
+      const nav = document.querySelector('nav');
+      nav.classList.remove('open');
+
+      const articles = document.querySelectorAll('#products article');
+      
+      for (let article of articles) {
+        article.classList.remove('expanded');
+      }
+    };
+
+    window.addEventListener('resize', windowResizeHandler); 
+  }
 
 
 
