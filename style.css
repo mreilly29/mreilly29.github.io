@@ -111,6 +111,7 @@ nav a:hover{
 }
 #about p{
     padding:2rem;
+    background-color:#e6ccb3;
     border-radius: 10px;
 }
 span.live {
@@ -123,6 +124,7 @@ span.live {
 #projects{
     font-size: 2rem;
     padding:3rem 2rem;
+    background-color: #f9f2ec;
 }
 #projects h2{
     text-shadow: -1px 1px 5px #130d06; 
@@ -230,7 +232,11 @@ span.live {
     min-width: unset;
   }
 }
+  
 
+#contactMe{
+    background-color: #f9f2ec;
+}
 #contactMe h3{
     display:flex;
     justify-content:center;
@@ -239,7 +245,11 @@ span.live {
     text-shadow: -1px 1px 5px #130d06; 
 }
 #contactMe ul{
-    display:flex;    
+    display:flex;
+    justify-content: space-around;    
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    font-size: 20px;
 }
 #contactMe a{
     text-decoration: none;
