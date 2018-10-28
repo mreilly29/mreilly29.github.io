@@ -8,7 +8,7 @@
         resetOpenCloseWindows();
         OpenModal();
         TechInventoryCarousel();
-
+        projectDetailsExpand();
     }
 
  // Navigation menu can be toggled
@@ -75,8 +75,7 @@ function OpenModal() {
     function displaySliderImage() {
       let { imageUrl, caption } = slides[sliderIndex];
       sliderFrame.style.backgroundImage = `url('${imageUrl}')`;
-      let count = `(${sliderIndex+1}/${slides.length}) `;
-      sliderCaption.innerHTML = count + caption;
+      sliderCaption.innerHTML = caption;
       sliderCaption.classList.add('flash');
       setTimeout(() => {
         sliderCaption.classList.remove('flash');
@@ -125,6 +124,21 @@ function OpenModal() {
     window.addEventListener('resize', windowResizeHandler); 
   }
 
+  // Product details can be expanded
+  function projectDetailsExpand() {
+
+    const articles = document.querySelectorAll('#projects article');
+
+    for (let article of articles) {
+      let button = article.querySelector('button');
+
+      button.addEventListener('click', function() {
+        article.classList.toggle('expanded');
+        button.innerHTML = article.classList.contains('expanded') ?
+          'Hide Details' : 'Show Details';
+      });
+    }
+  }
 
 
 

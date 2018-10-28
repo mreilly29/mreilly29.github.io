@@ -6,11 +6,14 @@
     text-align: center;
     list-style-type: none;
     line-height: 1.618em;
-    background-color:f9f2ec;
 }
 body.modal-open {
     /* hide scrolling when modal open */
     overflow: hidden;
+  }
+  body{
+    
+    background-color:#f9f2ec;
   }
 .bg-Pic{
     width: 100%;
@@ -90,6 +93,7 @@ nav a:hover{
     grid-template-columns: 1fr 3fr;
     background-color: #f9f2ec;
     padding: 4rem 0;
+    margin-right:30px;
 }
 #image{    
     width: 20vw;
@@ -139,8 +143,7 @@ span.live {
     float: left;
     box-shadow: 0 4px 8px 0 #130d06;
     border-radius: 5px;
-    width: 270px;
-    height: 520px;
+    width: 270px;    
     margin: 15px;
     background-color:#e6ccb3;  
     box-shadow: -2px 2px 5px #130d06;  
@@ -164,6 +167,70 @@ span.live {
     display:none;
 }
 
+.gitLink{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  right: 0;
+  height: 100%;
+  width: 96%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #130d06;
+}
+
+.gitLink:hover .overlay {
+  opacity: .7;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.text a{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 680px) {
+  #projects {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;    
+    width: 60vw;
+    min-width: 22em;
+    margin: 1em auto;
+  }
+
+  #projects button {
+    display: inline-block;
+    margin-bottom:5px;
+  }  
+  
+  #projects article p , #projects article li {
+    display: none;
+  }
+
+  #projects article.expanded p, #projects article.expanded li {
+    display: block;
+  }
+  
+}
+
+@media screen and (max-width: 680px) {
+  #projects {
+    width: auto;
+    min-width: unset;
+  }
+}
   
 
 #contactMe{
@@ -343,4 +410,9 @@ footer{
   }
   #modal-content span{
     font-size: 12px;
+}
+@media screen and (max-width: 400px) {
+  #modal{
+    height:90vh;
+  }
 }
