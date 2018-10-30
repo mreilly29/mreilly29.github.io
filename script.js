@@ -113,7 +113,7 @@ function OpenModal() {
 
       const nav = document.querySelector('nav');
       nav.classList.remove('open');
-
+  
       const articles = document.querySelectorAll('#products article');
       
       for (let article of articles) {

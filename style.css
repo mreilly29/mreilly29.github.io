@@ -11,8 +11,7 @@ body.modal-open {
     /* hide scrolling when modal open */
     overflow: hidden;
   }
-  body{
-    
+  body{    
     background-color:#f9f2ec;
   }
   .parallax {
@@ -67,6 +66,7 @@ nav a{
 nav a:hover{
     background-color: RGB(230,204,179,.6);
     color:#130d06;
+    transition: .2s;
 }
 @media screen and (max-width: 700px) {
 
@@ -80,11 +80,12 @@ nav a:hover{
       text-align:left;   
     }
     nav::before {
-      content: 'MENU';
+      content: 'MENU'; 
       color: #f9f2ec;
       background: #130d06;
       font-weight: bold;
       padding: 1em 2em;
+      cursor: pointer;
     }
     nav.open::before {
       content: 'HIDE MENU';
@@ -175,6 +176,7 @@ span.live {
     padding-right:10px;
 }
 #card button{
+  cursor: pointer;
     display:none;
 }
 
