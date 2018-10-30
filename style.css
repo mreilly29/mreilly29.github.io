@@ -15,12 +15,22 @@ body.modal-open {
     
     background-color:#f9f2ec;
   }
+  .parallax {
+    /* The image used */
+    background-image: url("images/bg-pic.png");
+    /* Set a specific height */
+    min-height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bg-Pic{
     width: 100%;
     height: 37rem;
-    background-image: url("images/bg-pic.png");
     margin:3rem auto 0;
-    background-position: center;
     text-align: center;
     text-shadow:-3px 2px 2px #130d06;
     color: #FBF6F2;
@@ -92,7 +102,7 @@ nav a:hover{
     display:grid;
     grid-template-columns: 1fr 3fr;
     background-color: #f9f2ec;
-    padding: 4rem 0;
+    padding-top: 4rem;
     margin-right:30px;
 }
 #image{    
@@ -263,14 +273,27 @@ footer{
 #contactMe a:hover{
     color:purple;
 }
+#parallax2 {
+  /* The image used */
+  background-image: url("images/wood.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+}
 .skills{
-    background-image: url("images/wood.png");
     height:-30vw;
-    width:100%;
+    
     color: #130d06;
     text-shadow:2px 2px 2px #f9f2ec;
     font-size: 3rem;
-    padding:3rem 2rem;
+    padding-top:3rem;
 }
 #slider ::selection {
     color: inherit;
@@ -336,8 +359,7 @@ footer{
   
   #slider-caption {
     margin: auto;
-    margin-top: 5px;
- 
+    margin-top: 5px; 
     padding: 0.2em 0.5em;
     font-size: 0.8em;
     text-align: center;
@@ -358,8 +380,7 @@ footer{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.7);
-  
+    background: rgba(0,0,0,0.7);  
     display: none;
     align-items: center;
     justify-content: center;
@@ -383,13 +404,11 @@ footer{
   }
   
   #modal button {
-    float: right;
-  
+    float: right;  
     background: #eee;
     padding: 5px 10px;
     border: 0;
-    border-radius: 3px;
-  
+    border-radius: 3px;  
     cursor: pointer;
   }
   
@@ -399,7 +418,6 @@ footer{
   }
   
   #modal #modal-content {
-
     clear: both;
     padding-top: 1em;
   }
