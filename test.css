@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+	font-family: 'Karla', sans-serif;
+}
+
+header {
+	height: 100vh;
+	top: 0;
+	left: auto;
+	background: url("images/breadOrCorgi.jpg") center top no-repeat;
+	background-size: 50%;
+}
+h1 {
+	mask: url("images/mask2.png");
+      -webkit-mask: url("images//mask2.png") center top no-repeat;
+      mask-size: 50%;
+			-webkit-mask-size: 50%;
+
+			
+      height: 100%;
+      color: black;
+      margin: 0;
+      font-size: 100px;
+      letter-spacing: -0.03em;
+      position: relative;
+			font-weight: normal;
+			
+
+}
+
+header h3 {
+	color: #fff;
+	z-index: 10000;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+
+h1 span {
+	position: fixed;
+	display: inline-block;
+	text-align: center;
+	transition: margin 1s ease-in-out;
+	font-family: 'Libre Baskerville', serif;
+	width: 100vw;
+	top: 80px;
+	font-style: italic;
+}
+
+
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+
+.cubes,
+.content {
+	margin: auto;
+}
+.cubes {
+	width: 94.02985075%;
+	max-width: 1260px;
+	padding: 4rem 2.25em 4em;
+	background: #fff;
+}
+
+.cube-container {
+	max-width: 200px;
+	text-align: center;
+	margin: 0 auto 4.5em;
+}
+
+
+.button {
+	font-size: .8em;
+	color: #fff;
+	width: 90%;
+	line-height: 1.15;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .95em 0;
+	border-radius: .5em;
+	background: rgba(74,137,202, .8);
+	margin: auto;
+}
+/* ---- Photo Overlay ---- */
+
+.photo-desc {
+	font-size: .85em;
+	color: #fff;
+	padding: 1.1em 1em 0;
+	background: #345d88;
+}
+.cube-container {
+	box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
+  perspective: 800px;
+}
+
+.photo-cube {
+transition: transform 2s ease-in-out; 
+  width: 220px;
+  height: 200px;
+  transform-style: preserve-3d;
+}
+
+.photo-cube:hover {
+transform: rotateY(-270deg);
+}
+
+.front,
+.back,
+.left,
+.right {
+width: 100%;
+height: 100%;
+display: block;
+position: absolute;
+}
+
+.front {
+transform: translate3d(0,0,110px);
+}
+
+.back {
+transform: translateZ(-110px) rotateY(270deg);
+  transform-origin: center left;
+}
+
+.left {
+transform: rotateY(-270deg) translate3d(110px, 0, 0);
+  transform-origin: top right;
+}
+
+.right {
+transform: translateZ(-110px) rotateY(180deg);
+ }
