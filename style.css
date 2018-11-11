@@ -20,6 +20,7 @@ body.modal-open {
     /* Set a specific height */
     min-height: 500px; 
     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,10 +57,10 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
-    background: #130d06;
+    background: #130d0699;
 }
 nav a{
-    padding:1rem 2rem;
+    padding:.75rem 2rem;
     text-decoration: none;
     color: #f9f2ec;
     font-weight: bold;
@@ -83,9 +84,8 @@ nav a:hover{
     nav::before {
       content: 'MENU'; 
       color: #f9f2ec;
-      background: #130d06;
       font-weight: bold;
-      padding: 1em 2em;
+      padding: .75em 2em;
       cursor: pointer;
     }
     nav.open::before {
@@ -396,7 +396,7 @@ footer{
   #modal {
     width: 80vw;
     height: 80vh;
-    background: #fff;
+    background: #d2cbccdb;
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0 0 5px 5px #333;
@@ -433,7 +433,7 @@ footer{
 }
 @media screen and (max-width: 400px) {
   #modal{
-    height:90vh;
+    height:92vh;
   }
 }
 
@@ -446,8 +446,7 @@ footer{
   display:none;
 	width: 94.02985075%;
 	max-width: 1260px;
-	padding: 4rem 2.25em 2em;
-	background: #fff;
+	padding: 4rem 2.25em 2em;\
 }
 
 .cube-container {
