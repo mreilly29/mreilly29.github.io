@@ -57,7 +57,7 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
-    background: #130d0699;
+    background: #130d06bd;
 }
 nav a{
     padding:.75rem 2rem;
@@ -98,23 +98,16 @@ nav a:hover{
       color: inherit;
       background: transparent;
     }
-  }
 
-#aboutMe{
+  }
+  #aboutMe{
     display:grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     background-color: #f9f2ec;
     padding: 4rem;
     margin-right:30px;
-}
-#image{    
-    width: 20vw;
-    height: 20vw;
-    min-width: 20px;
-    align-self: center;
-    padding-right: 1.5rem;
-}
-#about{
+  }
+  #about{
     align-items: center;
 }
 #about h2{
@@ -126,6 +119,27 @@ nav a:hover{
     background-color:#e6ccb3;
     border-radius: 10px;
 }
+  #image{    
+    display:none;
+    }
+  @media screen and (min-width: 650px) {
+
+#aboutMe{
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+#image{    
+  display: block;
+    width: 20vw;
+    height: 20vw;
+    min-width: 20px;
+    align-self: center;
+    padding-right: 1.5rem;
+}
+
+}
+
 span.live {
     cursor: pointer;
     border-bottom: 1px dashed #09f;
@@ -268,7 +282,7 @@ span.live {
     color:#130d06;
 }
 footer{
-    background-color:#130d06;
+    background-color:#261f17;
     padding:1.5rem;
     color: #f9f2ec;
 }
