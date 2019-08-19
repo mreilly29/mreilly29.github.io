@@ -1,0 +1,122 @@
+#projects{
+    font-size: 2rem;
+    padding:3rem 2rem;
+    color:#d5d5d5;
+}
+#projects h2{
+    background: #6d7993f8;
+    width: 215px;
+    margin: auto;
+    border-radius: 3px;
+    text-shadow: -2px 2px 5px #000000;
+}
+h3{
+    text-shadow: -1px 1px 2px #000000;
+}
+
+.cards{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    width: 100%;
+    margin: auto
+}
+#card{
+    float: left;
+    border-radius: 5px;
+    width: 270px;
+    margin: 15px;
+    background-color: #6d7993f8;
+    box-shadow: -2px 2px 5px #130d06;
+}
+#card img{
+    width:95%;
+    box-shadow: -1px 1px 3px #130d06;
+}
+
+#card h3{
+    padding:5px;
+}
+#card p{
+    font-weight: bold;
+}
+#card p, li{
+    display:flex;
+    padding-left:10px;
+    padding-right:10px;
+}
+#card button{
+  cursor: pointer;
+    display:none;
+}
+.expandSkills{
+    color:#000000;
+}
+
+.gitLink{
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  right: 0;
+  height: 95%;
+  width: 96%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #96858f;
+}
+
+.gitLink:hover .overlay {
+  opacity: .8;
+}
+.text {
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.text a{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 990px) {
+  #projects {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    width: 60vw;
+    min-width: 22em;
+    margin: 1em auto;
+  }
+
+  #projects button {
+    display: inline-block;
+    margin-bottom:5px;
+  }
+
+  #projects article p , #projects article li {
+    display: none;
+  }
+
+  #projects article.expanded p, #projects article.expanded li {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 680px) {
+  #projects {
+    width: auto;
+    min-width: unset;
+  }
+}

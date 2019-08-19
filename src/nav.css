@@ -1,0 +1,61 @@
+
+nav::before {
+  content: 'MENU';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  background: #000000;
+  color:white;
+}
+ nav a{
+    padding:.75rem 2rem;
+    text-decoration: none;
+    color: #d5d5d5;
+    font-weight: bold;
+
+}
+nav a:hover{
+    background-color:#d5d5d5;
+    color:#000000;
+    transition:.7s;
+}
+nav a:active{
+    color:#96858f;
+}
+
+
+@media screen and (max-width: 700px) {
+    nav {
+      display: flex;
+      flex-flow: column;
+      text-align:left;
+    }
+    nav a {
+      display: none;
+      text-align:left;
+    }
+    nav::before {
+      content: 'MENU';
+      color: #f9f2ec;
+      font-weight: 500;
+      padding: .75em 2em;
+      cursor: pointer;
+      font-weight: 800;
+    }
+    nav.open::before {
+      content: 'HIDE MENU';
+    }
+    nav.open a {
+      display: block;
+    }
+    nav ::selection {
+      color: inherit;
+      background: transparent;
+    }
+
+  }

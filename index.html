@@ -1,267 +1,274 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Maggie Reilly</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./style.css">    
-</head>
-<body>
-<header >
-    <div class="parallax">
-        <div class="bg-Pic" >
-            <h1>Maggie Reilly</h1>
-            <span id="occupation">Software Developer</span>
-        </div>
-    </div>
-</header>
-<main>
-    <section id="aboutMe">
-            <img id="image" src="images/lake1.gif"> 
-        <div id="about">
-            <h2>About the software developer</h2>
-            <p>Detail-oriented programmer with a varied IT background including business
-            analysis and digital marketing, eager to bring emerging software 
-            development skills and diverse experience to an agile, client-focused 
-            team. Learn more about my <span id="#modal-trigger" class="live">background</span>.</p>
-        </div>
-    </section>
-<div id="bg">
-    <section class="skills" id="techInventory"> 
-        <div id="parallax2">                  
-        <h3>Tech Skills</h3>
-
-        <div id="slider">
-            <div id="slider-frame">
-
-                <div id="slider-prev"><i class="fas fa-arrow-circle-left"></i></div>
-                <div id="slider-next"><i class="fas fa-arrow-circle-right"></i></div>
-
-                <div id="slider-images">
-                    <div data-src="images/Csharp.png">C#</div>
-                    <div data-src="images/NET.png">.NET Framwork</div>
-                    <div data-src="images/HTML5.png">HTML</div>
-                    <div data-src="images/CSS3.png">CSS</div>
-                    <div data-src="images/vs.png">Visual Studio</div>
-                    <div data-src="images/mvc.png">Model View Controller</div>
-                    <div data-src="images/OOP.png">Object Oriented Programming</div>
-                    <div data-src="images/TDD.png">Test Driven Development</div>
-                    <div data-src="images/JS.jpg">JavaScript</div>
-                    <div data-src="images/AJAX.png">AJAX</div>
-                    <div data-src="images/API.png">API</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Maggie Reilly</title>
+        <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+            crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./src/Nav.css">
+        <link rel="stylesheet" type="text/css" href="./src/AboutMe.css">
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <link rel="stylesheet" type="text/css" href="./src/techSkills.css">
+        <link rel="stylesheet" type="text/css" href="./src/Projects.css">
+        <link rel="stylesheet" type="text/css" href="./src/Contact.css">
+        <link rel="stylesheet" type="text/css" href="./src/Modal.css">
 
 
-
-
+    </head>
+    <body>
+        <div class='loader'><img id='dog-loading' src='images/dog1.png'>
+            LOADING...</div>
+        <div id="load" class="animate-bottom">
+            <header class='home'>
+                <div id='title'>
+                    <div id='name'>Maggie Reilly </div>
+                    <div id="occupation">Web Developer</div>
                 </div>
-            </div>
-            <div id="slider-caption"> The caption.</div>        
-        </div> 
-    </div>   
-     </section>  
+            </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="cards" id="projectCards">
-            <article id="card">
-            <h3>Personal Portfolio</h3>  
-            <div class="gitLink" >
-                    <a href="https://github.com/mreilly29/mreilly29.github.io">
-                        <img src="images/vpShelter.PNG">
-                <div class="overlay">
-                    <div class="text">Click to see on GitHub</div>
-                  </div>
-                </a>
-            </div>
-                <button>Show Details</button>
-
-                <p>Created a portfolio site that highlights Maggie's tech skills.</p>
-                <p> _____________________________</p>
-                    
-                <p class="expandSkills">Skills/Technology</p>
-                <ul>
-                            <li>HTML / CSS</li>
-                            <li>JavaScript</li>
-                            <li>Flexbox / Grid</li>
-                            <li>Responsive</li>
-                            <li>Mobile-First Design</li>
-                        </ul>
-            </article>
-            <article id="card">
-            <h3>Corgi Types Site</h3>
-            <div class="gitLink" >
-                    <a href="https://github.com/mreilly29/ReviewsSiteApi">             
-                <img src="images/CorgiSite.PNG">
-                <div class="overlay">
-                    <div class="text">Click to see on GitHub</div>
-                  </div>
-                </a>
-            </div>
-
-            <button>Show Details</button>
-            <p> Review site about Corgis in costumes. Created using an ASP.NET Core web application.</p>
-            <p> _____________________________</p>
-                
-            <p class="expandSkills">Skills/Technology</p>
-            
-            <ul>
-                <li>C#</li>
-                <li>MVC / APIs</li> 
-                <li>JavaScript</li>
-                <li>AJAX / REST</li>
-                <li>HTML / CSS</li>
-                <li>Test Driven Design</li>
-            </ul>
-            </article>
-            <article id="card">
-            <h3>Home Improvement Tracker</h3>           
-            <div class="gitLink" >
-                    <a href="https://github.com/mreilly29/Home-Improvement-Project">             
-                <img src="images/bank.PNG">
-                <div class="overlay">
-                    <div class="text">Click to see on GitHub</div>
-                  </div>
-                </a>
-            </div>
-            <button>Show Details</button>
-                <p>Capstone group project. Built an ASP.NET Core web application to track and organize home improvement projects.</p>
-                <p> _____________________________</p>
-                <p class="expandSkills">Skills/Technology</p>  
-                    <ul>
-                            <li>C#</li>
-                            <li>MVC / API</li>
-                            <li>JavaScript</li>
-                            <li>AJAX / REST</li>
-                            <li>HTML / CSS</li>   
-                            <li>Agile Methodology</li>
-                            <li>Test Driven Design</li>
-
-                        </ul>
-            </article>
-        </div>
-    </section>
-</div>
-    
-   
-    <section id="contactMe">
-        <h3>Contact Info</h3>
-        <div>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/maggie-reilly-6455ab126/"><i class="fab fa-linkedin"> LinkedIn</i></a></li>
-                <li><a href="https://github.com/mreilly29"><i class="fab fa-github"> GitHub</i></a></li>
-                <li><i class="far fa-envelope"> mfreilly29@gmail.com</i></li>
-                <li><i class="fas fa-mobile-alt"> (440) 725-2756</i></li>
-            </ul> 
-        </div>
-    </section>
-</main>
-<nav>
-    <a href="#">Home</a>
-    <a href="#aboutMe">About Me</a>
-    <a href="#techInventory">My Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contactMe">Contact Me</a>
-</nav>
-
-<footer>    
-    <p>Copyright © 2018 Maggie Reilly</p>
-</footer>
-<div id="backdrop">
-        <div id="modal">
-          <button class="text-button">Close</button>
-          <h4>My background</h4>
-    
-          <div id="modal-content">
-            <p>
-                <i class="fas fa-briefcase"></i> Two consecutive summer internships as a IT Business Analyst 
-                Intern at Dealer Tire in Cleveland, OH. <span>(Summers 2016 - 2017)</span>
-            </p>
-            <p>
-                <i class="fas fa-briefcase"></i> Intern for John Carroll University's Athletic Department 
-                managing and promoting the JCU student rewards Blue Streak Nation app. <span>(Fall '17 - Spring '18)</span>
-            </p>
-            <p>
-                <i class="fas fa-dog"></i> 2.5 years working at Camp Bow Wow (dog daycare/boarding facility) 
-                as a 'Camp Counselor' <span>(Dec. 2015 - Aug. 2018)</span>
-            </p>            
-            <p>
-                <i class="fas fa-graduation-cap"></i> 2018 We Can Code IT graduate with a certificate
-                of Software Development.
-            </p>
-            <p>                
-                <i class="fas fa-graduation-cap"></i> 2018 John Carroll University graduate with a BA in 
-                Sport Administration with a minor in Business. 
-            </p>
-           
-            
-          </div>
-          <section class="cubes">
-               
-                <div class="cube-container">
-                    <div id="photo-cube">
-            
-                            <img class="front" src="images/dealerTire.png" alt="">
-                            <div class="back photo-desc">
-                                    <div><i class="fas fa-briefcase"></i> </div>
-                                
-                              <h3>IT Business Analyst Intern</h3>
-                              <p>Two consecutive summer internships as a IT Business Analyst Intern at Dealer Tire in Cleveland, OH. </p>
-                              <p>(Summers 2016 - 2017)</p>
+            <main>
+                <section id="aboutMe">
+                    <!-- <img id="image" src="images/lake1.gif"> -->
+                    <label>About the web developer</label>
+                    <div class="about">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="images/lake1.gif" alt="Avatar"
+                                        style="width:300px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class='learn-more'>
+                                        Learn more about my <span
+                                            id="#modal-trigger"
+                                            class="live">background</span></div>
+                                </div>
                             </div>
-                            <img class="left" src="images/businessAnalyst.jpg" alt="">
-                            <img class="right" src="images/tire.jpg" alt="">
-            
-                    </div>
-                </div>
-                <div class="cube-container">
-                        <div id="photo-cube-two">
-                
-                            <img class="front" src="images/blueStreakNation.jpg" alt="">
-                            <div class="back photo-desc">
-                                <div><i class="fas fa-briefcase"></i> </div>
-                              <h3>Blue Streak Nation App Intern</h3>
-                              <p>Intern for John Carroll University's Athletic Department managing and promoting the JCU student rewards Blue Streak Nation app</p>
-                              <p>(Fall '17 - Spring '18)</p>                            
-                            </div>
-                            <img class="left" src="images/JCU.jpg" alt="">
-                            <img class="right" src="images/carrollCrazies.jpg" alt="">
-                
+                        </div>
+                        <div>
+                            <p>Detail-oriented programmer with a varied IT
+                                background including web development, business
+                                analysis and digital marketing, eager to bring
+                                emerging software development skills and diverse
+                                experience to an
+                                agile, client-focused team.</p>
                         </div>
                     </div>
-                    <div class="cube-container">
-                            <div id="photo-cube-three">
-                    
-                                <img class="front" src="images/cbw1.jpg" alt="">
-                               
-                                <div class="back photo-desc">
-                                    <div><i class="fas fa-dog"></i></div>
-                                  <h3>Camp Bow Wow</h3>
-                                  <p>2.5 years working at Camp Bow Wow (dog daycare/boarding facility) as a 'Camp Counselor'</p>
-                                  <p>(Dec. 2015 - Aug. 2018)</p>
+                </section>
+                <div class="bg" id="techInventory">
+                    <section class="skills">
+                        <div>
+                            <h3>Tech Skills</h3>
+
+                            <div id="slider">
+                                <div id="slider-frame">
+
+                                    <div id="slider-prev"><i class="fas
+                                            fa-arrow-circle-left"></i></div>
+                                    <div id="slider-next"><i class="fas
+                                            fa-arrow-circle-right"></i></div>
+                                    <div id="slider-images">
+                                        <div data-src="images/Csharp.png">C#</div>
+                                        <div data-src="images/NET.png">.NET
+                                            Framwork</div>
+                                        <div data-src="images/HTML5.png">HTML</div>
+                                        <div data-src="images/CSS3.png">CSS</div>
+                                        <div data-src="images/JS.jpg">JavaScript</div>
+                                        <div data-src="images/AJAX.png">AJAX</div>
+                                        <div data-src="images/vuejs.jpeg"> Vue
+                                            JS</div>
+                                    </div>
                                 </div>
-                                <img class="left" src="images/cbwDog.jpg" alt="">
-                                <img class="right" src="images/cbw.jpg" alt="">
-                    
+                                <div id="slider-caption"> The caption.</div>
                             </div>
-                        </div>                        
-            </section>
-            <div id="edu"> 
-                    <p>
-                        <i class="fas fa-graduation-cap"></i> 2018 We Can Code IT graduate with a certificate
-                        of Software Development.
-                    </p>
-                    <p>                
-                        <i class="fas fa-graduation-cap"></i> 2018 John Carroll University graduate with a BA in 
-                        Sport Administration and a minor in Business. 
-                    </p>
+                        </div>
+                    </section>
+
+                    <section id="projects">
+                        <h2>Projects</h2>
+                        <div class="cards" id="projectCards">
+                            <article id="card">
+                                <h3>Personal Portfolio</h3>
+                                <div class="gitLink">
+                                    <a
+                                        href="https://github.com/mreilly29/mreilly29.github.io">
+                                        <img src="images/vpShelter.PNG">
+                                        <div class="overlay">
+                                            <div class="text">Click to see
+                                                on
+                                                GitHub</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <button>Show Details</button>
+
+                                <p>Created a portfolio site that highlights
+                                    Maggie's tech skills.</p>
+                                <p> _____________________________</p>
+
+                                <p class="expandSkills">SKILLS/TECH:</p>
+                                <ul>
+                                    <li>HTML / CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Flexbox / Grid</li>
+                                    <li>Responsive</li>
+                                    <li>Mobile-First Design</li>
+                                </ul>
+                            </article>
+                            <article id="card">
+                                <h3>Corgi Types Site</h3>
+                                <div class="gitLink">
+                                    <a
+                                        href="https://github.com/mreilly29/ReviewsSiteApi">
+                                        <img src="images/CorgiSite.PNG">
+                                        <div class="overlay">
+                                            <div class="text">Click to see
+                                                on
+                                                GitHub</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <button>Show Details</button>
+                                <p> Review site about Corgis in costumes.
+                                    Created using an ASP.NET Core web
+                                    application.</p>
+                                <p> _____________________________</p>
+
+                                <p class="expandSkills">SKILLS/TECH:</p>
+                                <ul>
+                                    <li>C#</li>
+                                    <li>MVC / APIs</li>
+                                    <li>JavaScript</li>
+                                    <li>AJAX / REST</li>
+                                    <li>HTML / CSS</li>
+                                    <li>Test Driven Design</li>
+                                </ul>
+                            </article>
+                            <article id="card">
+                                <h3>Home Improvement Tracker</h3>
+                                <div class="gitLink">
+                                    <a
+                                        href="https://github.com/mreilly29/Home-Improvement-Project">
+                                        <img src="images/bank.PNG">
+                                        <div class="overlay">
+                                            <div class="text">Click to see
+                                                on
+                                                GitHub</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <button>Show Details</button>
+                                <p>Capstone group project. Built an ASP.NET
+                                    Core
+                                    web application to track and organize
+                                    home
+                                    improvement projects.</p>
+                                <p> _____________________________</p>
+                                <p class="expandSkills">SKILLS/TECH:</p>
+                                <ul>
+                                    <li>C#</li>
+                                    <li>MVC / API</li>
+                                    <li>JavaScript</li>
+                                    <li>AJAX / REST</li>
+                                    <li>HTML / CSS</li>
+                                    <li>Agile Methodology</li>
+                                    <li>Test Driven Design</li>
+
+                                </ul>
+                            </article>
+                        </div>
+                    </section>
                 </div>
-    
+
+
+                <section id="contactMe">
+                    <label>Contact Info</label>
+                    <div>
+                        <ul>
+                            <li><a
+                                    href="https://www.linkedin.com/in/maggie-reilly-6455ab126/"><i
+                                        class="fab fa-linkedin"> LinkedIn</i></a></li>
+                            <li><a href="https://github.com/mreilly29"><i
+                                        class="fab fa-github"> GitHub</i></a></li>
+                            <li><i class="far fa-envelope">
+                                    mfreilly29@gmail.com</i></li>
+                            <li><i class="fas fa-mobile-alt"> (440) 725-2756</i></li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <p>Copyright © 2018 Maggie Reilly</p>
+            </footer>
+            <div id="backdrop">
+                <div id="modal">
+                    <button class="text-button">Close</button>
+                    <div id="modal-content">
+                        <div class="section-header bold">
+                            <i class="fas fa-user-graduate"> </i> Education
+                        </div>
+                        <ul>
+                            <li class="p-3 medium">
+                                <i class="fas fa-graduation-cap"></i> <span class="medium">2018 We
+                                    Can Code IT graduate with a certificate
+                                    of Software Development.</span>
+                            </li>
+                            <li class="p-3 medium">
+                                <i class="fas fa-graduation-cap"> </i>
+                                        <span class="medium"> 2018 John
+                                    Carroll University graduate with a BA in
+                                    Sport Administration with a minor in
+                                    Business.</span>
+                            </li>
+                        </ul>
+
+                        <div class="section-header p-3 bold">
+                            Work History
+                        </div>
+                        <ul>
+                            <li class="">
+                                <i class="fas fa-briefcase"></i> <span class="medium">Web Developer
+                                at Dealer Tire in Cleveland, OH. </span>
+                                <span class="small">(january 2019 - Present)</span>
+                            </li>
+                            <li class="p-3">
+                                <i class="fas fa-briefcase"></i><span class="medium"> Two consecutive
+                                summer internships as a IT Business Analyst
+                                Intern at Dealer Tire in Cleveland, OH.</span> <span class="small">(Summers
+                                    2016 - 2017)</span>
+                            </li>
+                            <li class="p-3">
+                                <i class="fas fa-briefcase"></i> <span class="medium"></span>
+                                        John Carroll
+                                        University's
+                                        Athletic Department Intern managing and
+                                        promoting the JCU student rewards app 
+                                </span> <span class="small">(Fall
+                                    '17 - Spring '18)</span>
+                            </li>
+                            <li class="p-3">
+                                <i class="fas fa-dog"></i><span class="medium">3 years working at
+                                Camp Bow Wow (dog daycare/boarding facility)
+                                as a 'Camp Counselor'  </span><span class="small">(Dec. 2015 - Dec.
+                                    2018)</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>    
 
-<script src="./script.js"></script>
 
-</body>
+
+        <script src="./script.js"></script>
+    </body>
 </html>

@@ -1,0 +1,39 @@
+.home {
+    background-image: url("./images/bg.jpg");
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: #d5d5d5;
+    margin:3rem auto 0;
+    text-shadow:-3px 2px 2px #000000;
+    font-size: 2rem;
+    position: relative;
+}
+    .home h1{
+        font-size: 5rem;
+        padding:10rem 0 4rem 0;
+
+    }
+#occupation{
+    display:flex;
+    justify-content: center;
+    padding:1rem;
+    background-color:#96858fde;
+    opacity: 1;
+    -webkit-animation: fadein 9s; /* Safari, Chrome and Opera > 12.1 */
+         animation: fadein 9s;
+    
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#dog{
+    font-size: 3rem;
+    position: absolute;
+    bottom:5px;
+    right:5px;
+}

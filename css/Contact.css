@@ -1,0 +1,27 @@
+#contactMe h3{
+    font-size: 2rem;
+    text-shadow: -1px 1px 5px #96858f;
+}
+#contactMe ul{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    font-size: 20px;
+}
+#contactMe a{
+    text-decoration: none;
+    color:#130d06
+}
+#contactMe a:hover{
+  color:#96858f;
+}
+@media screen and (max-width: 650px){
+    #contactMe ul{
+        display:grid;
+        margin-left:30px;
+    }
+    #contactMe li:last-child{
+        padding-top: 8px;
+    }
+}

@@ -1,34 +1,52 @@
 (function() {
 
     setUpPage();
-  
+
     function setUpPage() {
-        
-        NavMenuToggle();
+        // NavMenuToggle();
         resetOpenCloseWindows();
         OpenModal();
         TechInventoryCarousel();
         projectDetailsExpand();
+        Loading();
+    }
+
+    function Wag1() {
+     document.getElementById("dog-loading").src = 'images/dog2.png';
+    }
+
+    function Wag2() {
+      document.getElementById("dog-loading").src = 'images/dog1.png';
+     }
+    function Loading() {
+     setInterval(Wag1, 500);
+     setInterval(Wag2, 1000);
+    setTimeout(showPage, 2000);
+    }
+
+    function showPage() {
+      document.querySelector(".loader").style.display = 'none';
+      document.querySelector(".animate-bottom").style.display = 'block';
     }
 
  // Navigation menu can be toggled
- function NavMenuToggle() {
+//  function NavMenuToggle() {
 
-    const nav = document.querySelector('nav');
+//     const nav = document.querySelector('nav');
 
-    const navClickHandler = function() {
-      this.classList.toggle('open');
-      event.stopPropagation();
-    };
+//     const navClickHandler = function() {
+//       this.classList.toggle('open');
+//       event.stopPropagation();
+//     };
 
-    nav.addEventListener('click', navClickHandler);
+//     nav.addEventListener('click', navClickHandler);
 
-    const bodyClickHandler = function() {
-      nav.classList.remove('open');
-    };
+//     const bodyClickHandler = function() {
+//       nav.classList.remove('open');
+//     };
 
-    document.body.addEventListener('click', bodyClickHandler);
-  }
+//     document.body.addEventListener('click', bodyClickHandler);
+//   }
 
 // Modal can be opened
 function OpenModal() {
@@ -113,9 +131,9 @@ function OpenModal() {
 
       const nav = document.querySelector('nav');
       nav.classList.remove('open');
-  
+
       const articles = document.querySelectorAll('#products article');
-      
+
       for (let article of articles) {
         article.classList.remove('expanded');
       }

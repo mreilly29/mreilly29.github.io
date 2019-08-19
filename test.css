@@ -3,36 +3,35 @@ body {
 	font-family: 'Karla', sans-serif;
 }
 
-header {
-	height: 100vh;
+.home {
+	height: 900px;
 	top: 0;
-	left: auto;
-	background: url("images/breadOrCorgi.jpg") center top no-repeat;
-	background-size: 50%;
+	background: url("images/sunset-dog-love-silhouette.jpg") center top no-repeat;
+	background-size: cover;
+	background-position: bottom;
 }
-h1 {
-	mask: url("images/mask2.png");
-      -webkit-mask: url("images//mask2.png") center top no-repeat;
-      mask-size: 50%;
-			-webkit-mask-size: 50%;
+#title {
+	mask: url("images/sunset-dog-love-silhouette\ MASK.png");
+    -webkit-mask: url("images//sunset-dog-love-silhouette\ MASK.png") center top no-repeat;
+    mask-size: cover;
+	-webkit-mask-size: cover;
 
-			
-      height: 100%;
-      color: black;
-      margin: 0;
-      font-size: 100px;
-      letter-spacing: -0.03em;
-      position: relative;
-			font-weight: normal;
-			
+    height: 100%;
+    color: black;
+    margin: 0;
+    font-size: 100px;
+    letter-spacing: -0.03em;
+    position: relative;
+	font-weight: normal;
+	left: 20vw;
 
 }
 
-header h3 {
+#occupation{
 	color: #fff;
 	z-index: 10000;
 	position: absolute;
-	top: 20px;
+	top: 90vh;
 	left: 0;
 	right: 0;
 	text-align: center;
@@ -40,13 +39,12 @@ header h3 {
 	letter-spacing: 8px;
 }
 
-h1 span {
+#name {
 	position: fixed;
 	display: inline-block;
-	text-align: center;
 	transition: margin 1s ease-in-out;
 	font-family: 'Libre Baskerville', serif;
-	width: 100vw;
+	width: 500px;
 	top: 80px;
 	font-style: italic;
 }
